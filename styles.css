@@ -1,0 +1,326 @@
+/* Fondo general */
+body {
+  background-color: #fafafa;
+  color: #333333;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* Encabezados */
+h1,
+h2,
+h3,
+h4 {
+  color: #000000; /* Texto principal en negro */
+}
+
+/* Estilos para el título */
+h1 {
+  font-family: "Great Vibes", cursive; /* Fuente principal */
+  font-size: 4rem; /* Tamaño grande */
+  font-style: italic; /* Cursiva */
+  font-weight: normal; /* Peso normal */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad */
+  margin-bottom: 20px; /* Espacio inferior para separación */
+}
+
+/* Estilos para el párrafo */
+p {
+  font-size: 1.5rem; /* Tamaño de fuente del párrafo */
+  font-weight: 400; /* Peso normal */
+  line-height: 1; /* Espaciado entre líneas */
+  margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Botones principales */
+.btn-primary {
+  background-color: #d4af37; /* Dorado suave */
+  border: none;
+  color: #ffffff;
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.btn-primary:hover {
+  background-color: #b9972c; /* Un dorado más oscuro al hacer hover */
+}
+
+/* Botón secundario */
+.btn-light {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Botón blanco semitransparente */
+  color: #333; /* Color del texto del botón */
+}
+
+/* Links */
+a {
+  color: #d4af37; /* Links en dorado */
+  transition: color 0.3s ease; /* Efecto de transición */
+}
+
+a:hover {
+  color: #b9972c; /* Efecto hover en dorado oscuro */
+}
+
+/* Secciones */
+section {
+  padding: 60px 0;
+}
+
+.bg-light {
+  background-color: #f5f5f5 !important; /* Fondo gris claro para contraste */
+}
+
+/* Footer o secciones oscuras */
+.bg-dark {
+  background-color: #333333 !important; /* Secciones de fondo oscuro */
+  color: #ffffff;
+}
+
+/* Estilos para la sección de inicio */
+#inicio {
+  position: relative; /* Asegura que los elementos se posicionen en relación a esta sección */
+  overflow: hidden; /* Evita que la imagen sobresalga del contenedor */
+}
+
+/* Estilo para la imagen de fondo */
+.background-image {
+  position: absolute; /* Posiciona la imagen de fondo */
+  top: 0; /* Alinea al principio del contenedor */
+  left: 0; /* Alinea a la izquierda del contenedor */
+  width: 100%; /* Ocupa todo el ancho */
+  height: 100%; /* Ocupa toda la altura */
+  background-image: url("img/imagen-influencer.png"); /* URL de la imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra el contenedor */
+  background-position: top; /* Centra la imagen */
+  z-index: 0; /* Asegura que la imagen esté detrás del texto */
+}
+
+/* Estilos para el texto sobre la imagen */
+.container {
+  position: relative; /* Asegura que el texto esté en la parte superior */
+  z-index: 1; /* Eleva el texto por encima de la imagen de fondo */
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  #inicio {
+    text-align: center; /* Centra el texto en móviles */
+  }
+
+  h1 {
+    font-size: 3rem; /* Ajustar tamaño en móviles */
+  }
+
+  /* Ajustes para la sección "Sobre mí" */
+  #sobre-mi h3 {
+    font-size: 5.9rem; /* Tamaño más pequeño para "Sobre mí:" */
+  }
+
+  #sobre-mi p {
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño para el párrafo */
+    line-height: 2;
+  }
+
+  #que-es-ugc {
+    padding: 20px 15px; /* Menor espaciado interno en móviles */
+    border-radius: 10px; /* Bordes redondeados más suaves en móviles */
+  }
+
+  #que-es-ugc h3 {
+    font-size: 2.9rem; /* Tamaño de fuente del título ajustado */
+  }
+
+  #que-es-ugc p {
+    font-size: 1rem; /* Tamaño de fuente del texto ajustado */
+    margin-bottom: 15px; /* Espacio debajo de cada párrafo reducido */
+  }
+  .col-md-6 {
+    margin-bottom: 10px; /* Espacio entre las columnas en móviles */
+  }
+}
+
+/* Estilos para la sección "Sobre mí" */
+#sobre-mi {
+  background-color: #dbcfc7; /* Color de fondo personalizado */
+  padding: 40px 0; /* Reducir el padding superior e inferior */
+}
+
+#sobre-mi h3 {
+  font-size: 4rem; /* Tamaño más pequeño para "Sobre mí:" */
+  font-family: "Great Vibes", cursive; /* Cambia a la fuente que prefieras */
+  font-weight: bold; /* Negrita para el título */
+  color: #000; /* Color negro para el título */
+  margin-bottom: 15px; /* Espacio debajo del título */
+}
+
+#sobre-mi p {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 3;
+  color: #333;
+  margin-bottom: 21px;
+  font-weight: bold;
+}
+
+/* Estilos para la sección "¿Qué es UGC?" */
+#que-es-ugc {
+  background-color: #ffffff; /* Fondo blanco para la tarjeta */
+  border-radius: 15px; /* Bordes redondeados más pronunciados */
+  padding: 40px 30px; /* Espaciado interno */
+  margin: 20px 0; /* Espacio entre secciones */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada */
+  max-width: 800px; /* Ancho máximo de la tarjeta */
+  margin: 40px auto; /* Centra la tarjeta en la página */
+}
+
+#que-es-ugc h3 {
+  color: #333333; /* Color del título */
+  font-family: "Georgia", serif; /* Fuente serif para un toque elegante */
+  font-weight: bold; /* Negrita */
+  margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+#que-es-ugc p {
+  color: #555555; /* Color del texto */
+  line-height: 1.6; /* Altura de línea */
+  font-family: "Arial", sans-serif; /* Fuente sans-serif para el cuerpo del texto */
+  margin-bottom: 20px; /* Espacio debajo de cada párrafo */
+}
+
+/* Estilos para la sección "Proyectos Destacados" */
+#proyectos-destacados {
+  background-color: #dbcfc7; /* Color de fondo personalizado */
+  padding: 40px 0; /* Reducir el padding superior e inferior */
+}
+#proyectos-destacados h4 {
+  font-size: 4rem; /* Tamaño más pequeño para "Sobre mí:" */
+  font-family: "Great Vibes", cursive; /* Cambia a la fuente que prefieras */
+  font-weight: bold; /* Negrita para el título */
+  color: #000; /* Color negro para el título */
+  margin-bottom: 15px; /* Espacio debajo del título */
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 768px) {
+  .video-container {
+    max-width: 700%; /* Puedes ajustar este valor según lo grande que quieras el video */
+    margin: 0 auto;
+  }
+}
+
+/* Estilos para la sección "Nichos y Habilidades" */
+#nichos-y-habilidades {
+  background-color: #dbcfc7; /* Fondo claro */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.portafolio{
+  font-size: 5rem; /* Tamaño más pequeño para "Sobre mí:" */
+  font-family: "Great Vibes", cursive; /* Cambia a la fuente que prefieras */
+  font-weight: bold; /* Negrita para el título */
+  color: #000; /* Color negro para el título */
+  margin-bottom: 30px; /* Espacio debajo del título */
+  margin-top: 20px; /* Margen superior para separar los títulos */
+}
+
+#nichos-y-habilidades h4 {
+  font-size: 3rem; /* Tamaño más pequeño para "Sobre mí:" */
+  font-family: "Great Vibes", cursive; /* Cambia a la fuente que prefieras */
+  font-weight: bold; /* Negrita para el título */
+  color: #000; /* Color negro para el título */
+  margin-bottom: 30px; /* Espacio debajo del título */
+  margin-top: 20px; /* Margen superior para separar los títulos */
+}
+
+#nichos-y-habilidades h3 {
+  font-size: 2.5rem; /* Tamaño más pequeño para "Sobre mí:" */
+  font-weight: bold; /* Negrita para el título */
+  color: #4e4e4e; /* Color negro para el título */
+  margin-bottom: 30px; /* Espacio debajo del título */
+  margin-top: 15px; /* Margen superior para separar los títulos */
+}
+
+#redes-sociales h3 {
+  font-size: 3rem; /* Tamaño más pequeño para "Sobre mí:" */
+  font-family: "Great Vibes", cursive; /* Cambia a la fuente que prefieras */
+  font-weight: bold; /* Negrita para el título */
+  color: #000; /* Color negro para el título */
+  margin-bottom: 15px; /* Espacio debajo del título */
+}
+
+#redes-sociales h5 {
+  font-size: 1rem; /* Tamaño más pequeño para "Sobre mí:" */
+  font-weight: bold; /* Negrita para el título */
+  color: #000; /* Color negro para el título */
+  margin-bottom: 15px; /* Espacio debajo del título */
+  text-decoration: underline;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Eleva la tarjeta al pasar el mouse */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Añade sombra al pasar el mouse */
+  border-color: #d1d1d1; /* Cambia el color del borde si lo deseas */
+}
+
+#portafolio-videos {
+  background-color: #dbcfc7;
+}
+
+i {
+  color: #d4af37; /* Color dorado */
+}
+
+.social-icons a img {
+    transition: transform 0.2s ease; /* Transición suave al transformar */
+}
+
+.social-icons a:hover img {
+    animation: shake 0.5s; /* Llama a la animación 'shake' */
+}
+
+@keyframes shake {
+    0% { transform: translate(20px, 0); }
+    25% { transform: translate(-15px, 0); }
+    50% { transform: translate(15px, 0); }
+    75% { transform: translate(-20px, 0); }
+    100% { transform: translate(0, 0); }
+}
+
+
+.nombre {
+    animation: heartbeat 1s infinite; /* Aplica la animación de latido */
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1); /* Escala normal */
+    }
+    50% {
+        transform: scale(1.1); /* Aumenta un poco el tamaño */
+    }
+}
